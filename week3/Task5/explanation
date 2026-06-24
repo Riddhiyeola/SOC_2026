@@ -1,0 +1,12 @@
+The Mechanism: 
+One single agent is initially flagged as "informed" (visualized in yellow) . 
+As the agents move autonomously under standard flocking rules, the informed agent continuously checks its immediate radius. 
+If a susceptible (uninformed) agent spends time within this localized radius, there is a set probability per frame that the signal will be successfully transferred to them.  
+
+Emergent Cascade: 
+The visualization effectively demonstrates the dynamics of network effects. 
+Initially, the spread is slow, remaining confined to the "Patient Zero" agents immediate sub-flock. 
+However, because the overarching flock occasionally splits, merges, and intersects, newly informed agents carry the signal to distant clusters.  
+
+Exponential Growth: Similar to the spread of a virus or a viral social media post, the rate of transmission accelerates exponentially. 
+Once a critical mass of agents becomes informed, the number of transmission vectors multiplies, causing the entire population to receive the danger or food signal in a very brief window of time, all stemming from local interactions without a central broadcasting system.
