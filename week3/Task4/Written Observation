@@ -1,0 +1,13 @@
+By introducing autonomous characters with conflicting goals—predators utilizing a "seek" behavior and prey utilizing a "flee" behavior —the simulation produces highly complex, emergent survival dynamics. 
+
+Group Formation: When the predators are distant, the prey agents behave according to standard flocking rules. 
+                 Cohesion and alignment take priority, causing the prey to cluster tightly together and move in unified groups across the screen.  
+
+Escape Behavior: As a predator enters the "flee perception radius" of the prey, the localized flee force exponentially overrides the flocking forces. 
+                 The prey agents exhibit a rapid "burst" or scattering effect, breaking their unified formation to maximize distance from the predator. 
+                 Because the prey agents have slightly higher maneuverability (max force) than the predators, they can perform sharp evasive turns.  
+
+Splitting and Merging: The most striking emergent behavior occurs when a predator dives directly into the center of a dense flock. 
+                       The flock instantly splits in half to flow around the predator, creating a localized vacuum. 
+                       Once the predator passes through, the remaining prey agents fall back under the influence of the cohesion rule. 
+                       They seek out the nearest neighbors and seamlessly merge back into a single unified group behind the predator, demonstrating fluid, adaptive crowd behavior without any centralized control.  
