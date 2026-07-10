@@ -1,8 +1,4 @@
-"""
-============================================================================
-  OPTIMIZED WORKSPACE  —  Truth Arena (The Membrane Strategy)
-============================================================================
-"""
+
 
 import numpy as np
 from truth import TruthRule, run
@@ -10,9 +6,7 @@ from truth import TruthRule, run
 # REQUIRED: The design note is injected into the weights file.
 NOTE = "Our society survives by forming a highly cohesive outer membrane, prioritizing dense clustered growth to maximize the 'truth' neighbor immunity threshold against liar conversion cascades."
 
-# ===========================================================================
-#  SECTION 1: THE FITNESS FUNCTION
-# ===========================================================================
+
 def how_good_is(rule):
     total = 0.0
     # Testing on 5 seeds instead of 4 prevents the model from overfitting to one map layout.
@@ -28,9 +22,7 @@ def how_good_is(rule):
     return total / 5                      
 
 
-# ===========================================================================
-#  SECTION 2: THE SEARCH (Enhanced Genetic Algorithm)
-# ===========================================================================
+
 # Scaled up for a robust search (will take longer to run, but yields a stronger rule)
 POP         = 32      # Larger population for more genetic diversity
 GENERATIONS = 100     # More rounds to solidify the survival strategy
@@ -82,9 +74,7 @@ def find_best_rule():
     return TruthRule().set_flat(best_weights)
 
 
-# ===========================================================================
-#  EXECUTION
-# ===========================================================================
+
 if __name__ == "__main__":
     print("training your robust rule…")
     rule = find_best_rule()
